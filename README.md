@@ -26,7 +26,7 @@
   
       x[i] = distribution(generator);//生成随机数
       
-      if (P(x[i]) < P(x[i-1])*distribution(generator))//就是这样一种判断方法，这个过程中还需要一个随机数
+      if (P(x[i]) < P(x[i-1])*distribution(generator))//就是这样一种判断方法
       
         x[i] = x[i-1];//如果中了这个判断，那么就让这个数和上一个数一样
         
