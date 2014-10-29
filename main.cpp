@@ -23,6 +23,9 @@ void gnuplot(const vector<double>& x)
     fprintf(fp, "plot \'%s\' smooth unique\n", fileName);
     fprintf(fp, "pause -1\n");
     fflush(fp);
+    getchar();
+    fprintf(fp, "gp_exit\n");
+    fflush(fp);
     pclose(fp);
 }
 
