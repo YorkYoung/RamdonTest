@@ -42,4 +42,3 @@ int main()
   gnuplot(x);
   return 0;
 }
-
